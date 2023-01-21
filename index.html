@@ -241,23 +241,41 @@
         <section class="container" id="tech-stack">STACK CONTENT</section>
         <section class="container" id="contact">CONTACT CONTENT</section>
     </main>
-    <nav class="controls">
-        <div class="control active-control" data-id="home">
+
+    <nav class="misc-controls">
+        <div class="misc-control" id="mute-button">
+            <i class="fa-solid fa-volume-xmark" id="mute-button-icon"></i>
+        </div>
+        <div class="misc-control" id="theme-button">
+            <i class="fa-solid fa-sun" id="theme-button-icon"></i>
+        </div>
+    </nav>
+
+    <nav class="menu-items">
+        <div class="menu-item active-menu-item" data-id="home">
             <i class="fa-solid fa-house"></i>
         </div>
-        <div class="control" data-id="bio">
+        <div class="menu-item" data-id="bio">
             <i class="fa-solid fa-user"></i>
         </div>
-        <div class="control" data-id="portfolio">
+        <div class="menu-item" data-id="portfolio">
             <i class="fa-solid fa-briefcase"></i>
         </div>
-        <div class="control" data-id="tech-stack">
+        <div class="menu-item" data-id="tech-stack">
             <i class="fa-solid fa-screwdriver-wrench"></i>
         </div>
-        <div class="control" data-id="contact">
+        <div class="menu-item" data-id="contact">
             <i class="fa-solid fa-envelope"></i>
         </div>
     </nav>
+    <video autoplay muted="true" loop>
+        <source src="assets/videos/background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video element.
+    </video>
+    <audio muted="true" loop id="soundtrack">
+        <source src="assets/audios/soundtrack.mp3" type="audio/mpeg">
+        Your browser does not support HTML5 audio element.
+    </audio>
 </body>
 <script src="assets/scripts/main.js"></script>
 

@@ -476,18 +476,19 @@ section {
 }
 .tech-stack-content .tech-stack-items .tech-stack-item:hover {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.3);
-  transform: translateY(-5px);
+  transform: translateY(-3px);
   transition: all 0.4s ease-in-out;
 }
 .tech-stack-content .tech-stack-items .tech-stack-item:hover img {
   filter: grayscale(0);
   transform: scale(1.1);
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+  background-color: var(--color-primary);
 }
 .tech-stack-content .tech-stack-items .tech-stack-item img {
-  align-content: center;
-  width: 200px;
-  height: 200px;
+  padding: 2rem;
+  height: 250px;
+  width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-top-left-radius: 5px;

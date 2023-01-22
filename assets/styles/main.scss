@@ -426,11 +426,6 @@ section {
 }
 
 .portfolio-content {
-
-    .portfolio-description {
-        text-align: justify;
-    }
-
     .project-items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -518,11 +513,6 @@ section {
 }
 
 .tech-stack-content {
-
-    .tech-stack-description {
-        text-align: justify;
-    }
-
     .tech-stack-items {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -541,6 +531,7 @@ section {
                 box-shadow: 1px 1px 20px rgba(0, 0, 0, .3);
                 transform: translateY(-3px);
                 transition: all .4s ease-in-out;
+
                 img {
                     filter: grayscale(0);
                     transform: scale(1.1);
@@ -550,6 +541,7 @@ section {
             }
 
             img {
+                cursor: pointer;
                 padding: 2rem;
                 height: 250px;
                 width: 250px;
@@ -566,6 +558,7 @@ section {
                 border-top: 8px solid var(--color-secondary);
 
                 .tech-stack-item-title {
+                    cursor: pointer;
                     text-align: center;
                     text-transform: uppercase;
                 }
@@ -586,11 +579,11 @@ section {
                 }
 
                 h4 {
+                    cursor: pointer;
                     text-align: center;
                     font-size: 1.5rem;
                     margin-bottom: .7rem;
                     transition: all .4s ease-in-out;
-                    cursor: pointer;
 
                     &:hover {
                         color: var(--color-secondary);
@@ -607,6 +600,122 @@ section {
         }
     }
 }
+
+.contact-content {
+    display: flex;
+    padding-top: 3.5rem;
+
+    .contact-left-side-content {
+        flex: 2;
+
+        h4 {
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin: 1rem 0;
+            line-height: 2rem;
+        }
+
+        .contact-info {
+            .contact-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    margin: .3rem 0 !important;
+                    padding: 0 !important;
+                }
+
+                .icon {
+                    display: grid;
+                    grid-template-columns: 40px 1fr;
+
+                    i {
+                        display: flex;
+                        align-items: center;
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        .contact-icon {
+            display: flex;
+            margin-top: 2rem;
+
+            a {
+                display: flex;
+                align-items: center;
+                color: var(--color-white);
+                background-color: var(--color-grey-5);
+                cursor: pointer;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin: 0 .4rem;
+                transition: all .4s ease-in-out;
+
+                &:hover {
+                    background-color: var(--color-secondary);
+
+                    i {
+                        color: var(--color-primary);
+                    }
+                }
+
+                i {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    .contact-right-side-content {
+        flex: 3;
+        margin-left: 3rem;
+
+        .input-control {
+            margin: 1.5rem 0;
+
+            input,
+            textarea {
+                border-radius: 30px;
+                font-weight: inherit;
+                font-size: inherit;
+                font-family: inherit;
+                padding: .8rem 1.1rem;
+                outline: none;
+                border: none;
+                background-color: var(--color-grey-5);
+                width: 100%;
+                color: var(--color-white);
+                resize: none;
+            }
+        }
+
+        .double-input-control {
+            display: flex;
+
+            :last-child {
+                margin-left: 1.5rem;
+            }
+        }
+
+        .submit-btn {
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+}
+
 
 /** shared styles **/
 .button-container {
@@ -686,6 +795,10 @@ section {
             font-size: 6rem;
         }
     }
+}
+
+.content-description {
+    text-align: justify;
 }
 
 .subtitle {
